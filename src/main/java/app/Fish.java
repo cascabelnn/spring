@@ -7,12 +7,11 @@ import java.util.Arrays;
 import java.util.List;
 
 @Component
-public class Dog implements Animal {
+public class Fish implements Animal {
     private boolean hungry = true;
 
     @Override
     public void voice() {
-        System.out.println("Gav");
     }
 
     @Override
@@ -28,11 +27,11 @@ public class Dog implements Animal {
 
     @Override
     public List<FoodType> getPossibleFoodTypes() {
-        return Arrays.asList(FoodType.FISH, FoodType.MEAT);
+        return Arrays.asList(FoodType.PLANTS, FoodType.FISH);
     }
 
     @Override
     public String toString() {
-        return "Dog";
+        return "Fish";
     }
 }
